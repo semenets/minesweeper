@@ -1,0 +1,93 @@
+/* Minesweeper.css */
+.minesweeper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settings {
+  margin: 10px 0 20px 0;
+}
+
+.board-container {
+  border: 10px solid #c6c6c6;
+  display: inline-block;
+  
+}
+
+.board {
+  display: grid;
+}
+
+.cell {
+  background-image: url(https://minesweeper.online/img/skins/hd/closed.svg?v=12);
+  background-size: 100% 100%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c6c6c6;
+  border: 1px solid #999;
+  cursor: pointer;
+  /*outline: 2px solid #fff;*/
+}
+
+.cell.revealed {
+  background-color: #eee;
+  background-image: url();
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cell.revealed.mine {
+  background-color: red;
+}
+
+.cell.revealed .mine {
+  color: red;
+}
+
+.board-border {
+  border: 4px solid #808080;
+}
+
+.cell.blue {
+  color: blue;
+}
+
+.cell.green {
+  color: green;
+}
+
+.cell.red {
+  color: red;
+}
+
+.minesweeper .input-field {
+  margin: 0 20px 0 10px;
+  height: 20px;
+}
+
+.minesweeper .label-text {
+  font-weight: 700;
+}
+
+.button-update {
+  background-color: #fff;
+  border: 1px solid #c6c6c6;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.minesweeper .custom-game {
+  margin-top: 15px;
+}
+
+.minesweeper .timer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 50px;
+  color: red;
+  font-family: Digital-7Mono;
+}
