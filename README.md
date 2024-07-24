@@ -24,7 +24,7 @@ Ensure you have the following installed:
 
     ```sh
     git clone https://github.com/semenets/minesweeper
-    cd calculator-app
+    cd minesweeper
     ```
 
 2. Install the dependencies:
